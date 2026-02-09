@@ -21,16 +21,16 @@ st.markdown("""
     
     /* Increase title size */
     h1 {
-        font-size: 2rem !important;
+        font-size: 10rem !important;
     }
     
     /* Increase header sizes */
     h2 {
-        font-size: 1.5rem !important;
+        font-size: 6rem !important;
     }
     
     h3 {
-        font-size: 1rem !important;
+        font-size: 4rem !important;
     }
     
     /* Increase button text */
@@ -62,17 +62,17 @@ st.markdown("""
     
     /* Increase dataframe text significantly */
     .dataframe {
-        font-size: 22px !important;
+        font-size: 16px !important;
     }
     
     .dataframe th {
-        font-size: 18px !important;
+        font-size: 16px !important;
         font-weight: 600 !important;
         padding: 12px !important;
     }
     
     .dataframe td {
-        font-size: 20px !important;
+        font-size: 16px !important;
         padding: 10px !important;
     }
     
@@ -82,7 +82,7 @@ st.markdown("""
     }
     
     .stMarkdown p {
-        font-size: 28px !important;
+        font-size: 16px !important;
     }
     
     /* Increase file uploader text */
