@@ -169,7 +169,13 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.title("🐴 Stamboom voorbereiding - controleer op veelvoorkomende fouten")
+# Use HTML for title with inline styling to ensure it works on Streamlit Cloud
+st.markdown("""
+    <h1 style='font-size: 48px; font-weight: 700; margin-bottom: 20px; color: #262730;'>
+        🐴 Stamboom voorbereiding - controleer op veelvoorkomende fouten
+    </h1>
+    """, unsafe_allow_html=True)
+
 st.markdown("Upload uw stamboombestand en voer verschillende kwaliteitscontroles uit.")
 
 # File upload and separator selection
@@ -197,7 +203,7 @@ if uploaded_file is not None:
             st.dataframe(df.head(10), use_container_width=True)
         
         # Column mapping section
-        st.header("📋 Kolomtoewijzing")
+        st.markdown("<h2 style='font-size: 32px; font-weight: 600; margin-top: 30px; margin-bottom: 15px;'>📋 Kolomtoewijzing</h2>", unsafe_allow_html=True)
         st.markdown("**Geef aan welke kolommen overeenkomen met de vereiste velden:**")
         
         col1, col2, col3, col4 = st.columns(4)
@@ -231,7 +237,7 @@ if uploaded_file is not None:
         st.divider()
         
         # Check 1: Missing Parents
-        st.header("1️⃣ Ontbrekende dieren")
+        st.markdown("<h2 style='font-size: 32px; font-weight: 600; margin-top: 30px; margin-bottom: 15px;'>1️⃣ Ontbrekende dieren</h2>", unsafe_allow_html=True)
         st.markdown("Zoek dieren die als ouder voorkomen maar niet zelf geregistreerd staan.")
         
         if st.button("Zoek ontbrekende dieren", key="check1"):
@@ -273,7 +279,7 @@ if uploaded_file is not None:
         st.divider()
         
         # Check 2: Duplicate IDs
-        st.header("2️⃣ Duplicaten")
+        st.markdown("<h2 style='font-size: 32px; font-weight: 600; margin-top: 30px; margin-bottom: 15px;'>2️⃣ Duplicaten</h2>", unsafe_allow_html=True)
         st.markdown("Zoek dieren die meerdere keren in het bestand staan op basis van de ID kolom.")
         
         if st.button("Zoek duplicaten", key="check2"):
@@ -299,7 +305,7 @@ if uploaded_file is not None:
         st.divider()
         
         # Check 3: Offspring Count
-        st.header("3️⃣ Verdacht aantal nakomelingen")
+        st.markdown("<h2 style='font-size: 32px; font-weight: 600; margin-top: 30px; margin-bottom: 15px;'>3️⃣ Verdacht aantal nakomelingen</h2>", unsafe_allow_html=True)
         st.markdown("Identificeer top 20 vaders en moeders met de meeste nakomelingen. Dieren met onwaarschijnlijk veel nakomelingen (bijv vrouwelijke dieren met meer dan 30 nakomelingen) zijn 'verdacht'.")
         
         if st.button("Tel nakomelingen", key="check3"):
@@ -350,7 +356,7 @@ if uploaded_file is not None:
         st.divider()
         
         # Check 4: Animals as both Sire and Dam
-        st.header("4️⃣ Dieren met twee geslachten")
+        st.markdown("<h2 style='font-size: 32px; font-weight: 600; margin-top: 30px; margin-bottom: 15px;'>4️⃣ Dieren met twee geslachten</h2>", unsafe_allow_html=True)
         st.markdown("Zoek dieren die als vader en als moeder in de stamboom staan.")
         
         if st.button("Zoek dieren die zowel vader en moeder zijn", key="check4"):
@@ -386,7 +392,7 @@ if uploaded_file is not None:
         st.divider()
         
         # Check 5: Birth Date Inconsistencies
-        st.header("5️⃣ Geboortedatum inconsistenties")
+        st.markdown("<h2 style='font-size: 32px; font-weight: 600; margin-top: 30px; margin-bottom: 15px;'>5️⃣ Geboortedatum inconsistenties</h2>", unsafe_allow_html=True)
         st.markdown("Zoek dieren die geboren zijn voor hun ouders. Let wel: vaak zijn dit dieren waarvan de geboortedatum eigenlijk onbekend was, en die bijv. op 1-1-1900 zijn gezet. Let op dat deze niet worden meegnoemen in het berekenen van het generatieinterval. Voor andere inconsitenties, kan het zijn dat de afstamming niet klopt, of dat de geboortedatum van de nakomeling of het ouderdier niet klopt.")
         
         if st.button("Voer geboortedatum controle uit", key="check5"):
@@ -447,7 +453,7 @@ if uploaded_file is not None:
         st.divider()
         
         # Check 6: Circular References (Kringverwijzingen)
-        st.header("6️⃣ Kringverwijzingen")
+        st.markdown("<h2 style='font-size: 32px; font-weight: 600; margin-top: 30px; margin-bottom: 15px;'>6️⃣ Kringverwijzingen</h2>", unsafe_allow_html=True)
         st.markdown("Detecteer kringverwijzingen in de stamboomstructuur")
         
         if st.button("Zoek kringverwijzingen", key="check6"):
