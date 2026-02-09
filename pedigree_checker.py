@@ -21,16 +21,16 @@ st.markdown("""
     
     /* Increase title size */
     h1 {
-        font-size: 6rem !important;
+        font-size: 2rem !important;
     }
     
     /* Increase header sizes */
     h2 {
-        font-size: 4rem !important;
+        font-size: 1.5rem !important;
     }
     
     h3 {
-        font-size: 3rem !important;
+        font-size: 1rem !important;
     }
     
     /* Increase button text */
@@ -52,12 +52,12 @@ st.markdown("""
     
     /* Increase metric text */
     [data-testid="stMetricValue"] {
-        font-size: 3.5rem !important;
+        font-size: 2rem !important;
         font-weight: 600 !important;
     }
     
     [data-testid="stMetricLabel"] {
-        font-size: 1.8rem !important;
+        font-size: 1.5rem !important;
     }
     
     /* Increase dataframe text significantly */
