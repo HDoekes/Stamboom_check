@@ -11,43 +11,43 @@ st.markdown("""
     <style>
     /* Increase base font size for main content */
     html, body, [class*="css"] {
-        font-size: 28px;
+        font-size: 24px;
     }
     
     /* Main body text and paragraphs */
     p, div, span, label {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
     
     /* Increase title size */
     h1 {
-        font-size: 3.5rem !important;
+        font-size: 4rem !important;
     }
     
     /* Increase header sizes */
     h2 {
-        font-size: 2rem !important;
+        font-size: 2.5rem !important;
     }
     
     h3 {
-        font-size: 1.5rem !important;
+        font-size: 2rem !important;
     }
     
     /* Increase button text */
     .stButton button {
-        font-size: 26px !important;
+        font-size: 24px !important;
         padding: 0.85rem 1.75rem !important;
         font-weight: 500 !important;
     }
     
     /* Increase selectbox and input text */
     .stSelectbox label, .stTextInput label {
-        font-size: 26px !important;
+        font-size: 24px !important;
         font-weight: 600 !important;
     }
     
     .stSelectbox div[data-baseweb="select"] > div {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
     
     /* Increase metric text */
@@ -62,23 +62,23 @@ st.markdown("""
     
     /* Increase dataframe text significantly */
     .dataframe {
-        font-size: 24px !important;
+        font-size: 22px !important;
     }
     
     .dataframe th {
-        font-size: 26px !important;
+        font-size: 24px !important;
         font-weight: 600 !important;
         padding: 12px !important;
     }
     
     .dataframe td {
-        font-size: 24px !important;
+        font-size: 20px !important;
         padding: 10px !important;
     }
     
     /* Increase markdown text */
     .stMarkdown {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
     
     .stMarkdown p {
@@ -87,23 +87,23 @@ st.markdown("""
     
     /* Increase file uploader text */
     .stFileUploader label {
-        font-size: 26px !important;
+        font-size: 24px !important;
         font-weight: 600 !important;
     }
     
     .stFileUploader div {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
     
     /* Increase expander text */
     .streamlit-expanderHeader {
-        font-size: 26px !important;
+        font-size: 24px !important;
         font-weight: 500 !important;
     }
     
     /* Increase download button text */
     .stDownloadButton button {
-        font-size: 26px !important;
+        font-size: 24px !important;
         padding: 0.85rem 1.75rem !important;
         font-weight: 500 !important;
     }
@@ -114,18 +114,18 @@ st.markdown("""
     }
     
     .stAlert > div {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
     
     /* Code blocks */
     code {
-        font-size: 24px !important;
+        font-size: 20px !important;
         line-height: 1.6 !important;
     }
     
     /* Column labels in selectbox */
     [role="option"] {
-        font-size: 26px !important;
+        font-size: 24px !important;
         padding: 10px !important;
     }
     
