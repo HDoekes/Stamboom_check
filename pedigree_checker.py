@@ -11,43 +11,43 @@ st.markdown("""
     <style>
     /* Increase base font size for main content */
     html, body, [class*="css"] {
-        font-size: 24px;
+        font-size: 18px;
     }
     
     /* Main body text and paragraphs */
     p, div, span, label {
-        font-size: 24px !important;
+        font-size: 18px !important;
     }
     
     /* Increase title size */
     h1 {
-        font-size: 4rem !important;
+        font-size: 6rem !important;
     }
     
     /* Increase header sizes */
     h2 {
-        font-size: 2.5rem !important;
+        font-size: 4rem !important;
     }
     
     h3 {
-        font-size: 2rem !important;
+        font-size: 3rem !important;
     }
     
     /* Increase button text */
     .stButton button {
-        font-size: 24px !important;
+        font-size: 18px !important;
         padding: 0.85rem 1.75rem !important;
         font-weight: 500 !important;
     }
     
     /* Increase selectbox and input text */
     .stSelectbox label, .stTextInput label {
-        font-size: 24px !important;
+        font-size: 18px !important;
         font-weight: 600 !important;
     }
     
     .stSelectbox div[data-baseweb="select"] > div {
-        font-size: 24px !important;
+        font-size: 18px !important;
     }
     
     /* Increase metric text */
@@ -66,7 +66,7 @@ st.markdown("""
     }
     
     .dataframe th {
-        font-size: 24px !important;
+        font-size: 18px !important;
         font-weight: 600 !important;
         padding: 12px !important;
     }
@@ -78,7 +78,7 @@ st.markdown("""
     
     /* Increase markdown text */
     .stMarkdown {
-        font-size: 24px !important;
+        font-size: 18px !important;
     }
     
     .stMarkdown p {
@@ -87,51 +87,51 @@ st.markdown("""
     
     /* Increase file uploader text */
     .stFileUploader label {
-        font-size: 24px !important;
+        font-size: 18px !important;
         font-weight: 600 !important;
     }
     
     .stFileUploader div {
-        font-size: 24px !important;
+        font-size: 18px !important;
     }
     
     /* Increase expander text */
     .streamlit-expanderHeader {
-        font-size: 24px !important;
+        font-size: 18px !important;
         font-weight: 500 !important;
     }
     
     /* Increase download button text */
     .stDownloadButton button {
-        font-size: 24px !important;
+        font-size: 18px !important;
         padding: 0.85rem 1.75rem !important;
         font-weight: 500 !important;
     }
     
     /* Success, error, warning, info messages */
     .stAlert {
-        font-size: 26px !important;
+        font-size: 22px !important;
     }
     
     .stAlert > div {
-        font-size: 24px !important;
+        font-size: 18px !important;
     }
     
     /* Code blocks */
     code {
-        font-size: 20px !important;
+        font-size: 18px !important;
         line-height: 1.6 !important;
     }
     
     /* Column labels in selectbox */
     [role="option"] {
-        font-size: 24px !important;
+        font-size: 18px !important;
         padding: 10px !important;
     }
     
     /* Divider with more spacing */
     hr {
-        margin: 2rem 0 !important;
+        margin: 3rem 0 !important;
     }
     </style>
     """, unsafe_allow_html=True)
