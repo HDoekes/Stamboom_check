@@ -19,24 +19,49 @@ st.markdown("""
         font-size: 20px !important;
     }
     
-    /* Increase title size - MAIN TITLE */
-    h1 {
-        font-size: 3.5rem !important;
+    /* MAIN TITLE - Very specific selector for Streamlit Cloud */
+    .main h1, 
+    div[data-testid="stMarkdownContainer"] h1,
+    .element-container h1 {
+        font-size: 3rem !important;
         font-weight: 700 !important;
         margin-bottom: 1.5rem !important;
         line-height: 1.2 !important;
+        color: #262730 !important;
     }
     
-    /* Increase header sizes - SECTION HEADERS */
-    h2 {
-        font-size: 2.2rem !important;
+    /* Additional title targeting */
+    h1 {
+        font-size: 3rem !important;
+        font-weight: 700 !important;
+    }
+    
+    /* SECTION HEADERS - More specific selectors */
+    .main h2,
+    div[data-testid="stMarkdownContainer"] h2,
+    .element-container h2 {
+        font-size: 2rem !important;
         font-weight: 600 !important;
         margin-top: 2rem !important;
         margin-bottom: 1rem !important;
+        color: #262730 !important;
+    }
+    
+    h2 {
+        font-size: 2rem !important;
+        font-weight: 600 !important;
+    }
+    
+    /* SUBHEADERS */
+    .main h3,
+    div[data-testid="stMarkdownContainer"] h3,
+    .element-container h3 {
+        font-size: 1.5rem !important;
+        font-weight: 600 !important;
     }
     
     h3 {
-        font-size: 1.6rem !important;
+        font-size: 1.5rem !important;
         font-weight: 600 !important;
     }
     
@@ -65,6 +90,7 @@ st.markdown("""
     
     [data-testid="stMetricLabel"] {
         font-size: 1.5rem !important;
+        font-weight: 500 !important;
     }
     
     /* Increase dataframe text significantly */
